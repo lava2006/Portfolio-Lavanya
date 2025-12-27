@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanya P | Cloud Mission Control - DevOps Portfolio</title>
+    <meta name="description" content="Lavanya P - DevOps & Cloud Engineer | AWS | Docker | Python | MVIT Student">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🌙</span>
+                LAVANYA P
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-progress-bar" id="progressBar"></div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="stars-field">
+                <div class="stars stars-small"></div>
+                <div class="stars stars-medium"></div>
+                <div class="stars stars-large"></div>
+            </div>
+            <div class="cloud-layer">
+                <div class="floating-cloud cloud-1">☁️</div>
+                <div class="floating-cloud cloud-2">☁️</div>
+                <div class="floating-cloud cloud-3">☁️</div>
+                <div class="floating-cloud cloud-4">☁️</div>
+                <div class="floating-cloud cloud-5">☁️</div>
+            </div>
+            <div class="rain-container" id="rainContainer"></div>
+            <canvas id="particleCanvas"></canvas>
+        </div>
+
+        <div class="hero-content">
+            <div class="astronaut-container">
+                <div class="helmet-glow"></div>
+                <div class="astronaut-photo">
+                    <img src="assets/photo.jpg" alt="Lavanya P">
+                </div>
+                <div class="floating-debris">
+                    <span class="debris">🛰️</span>
+                    <span class="debris">⭐</span>
+                    <span class="debris">💫</span>
+                </div>
+            </div>
+
+            <div class="hero-title-container">
+                <h1 class="glitch-text">CLOUD MISSION CONTROL</h1>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="commander-card">
+                <div class="rank-badge">
+                    <span class="badge-icon">☁️</span>
+                    <span>CLOUD COMMANDER</span>
+                </div>
+
+                <h2 class="commander-name">LAVANYA P</h2>
+
+                <div class="role-container">
+                    <span>☁️</span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">▮</span>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item" data-trigger="rain">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-value" data-target="9.02">0</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-item" data-trigger="rain">
+                        <div class="stat-icon">🔥</div>
+                        <div class="stat-value" data-target="700">0</div>
+                        <div class="stat-label">Problems Solved</div>
+                    </div>
+                    <div class="stat-item" data-trigger="rain">
+                        <div class="stat-icon">🏅</div>
+                        <div class="stat-value" data-target="5">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-item" data-trigger="rain">
+                        <div class="stat-icon">🌔</div>
+                        <div class="stat-value" data-target="68">0</div>
+                        <div class="stat-label">% To Mastery</div>
+                    </div>
+                </div>
+
+                <div class="moon-info">
+                    <div class="moon-phase-display">
+                        <div class="moon-visual">
+                            <div class="moon-sphere">
+                                <div class="moon-shadow"></div>
+                            </div>
+                            <div class="moon-label">🌔 Waxing Gibbous</div>
+                        </div>
+                        <div class="moon-details">
+                            <p><strong>Birth Date:</strong> January 8, 2006</p>
+                            <p><strong>Moon Phase:</strong> Waxing Gibbous (68% illuminated)</p>
+                            <p><strong>Meaning:</strong> Final refinement before full potential</p>
+                            <p class="moon-quote">"Like my birth moon, I'm on a constant journey toward full mastery!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-dock">
+                    <a href="https://github.com/lava2006" class="social-btn github-btn" target="_blank">
+                        <span class="btn-icon">🐙</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lavanya-ragavan/" class="social-btn linkedin-btn" target="_blank">
+                        <span class="btn-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.credly.com/users/lavanya08/" class="social-btn resume-btn" target="_blank">
+                        <span class="btn-icon">🏅</span>
+                        <span>Credly</span>
+                    </a>
+                    <a href="mailto:lavanyaragavan08@gmail.com" class="social-btn email-btn">
+                        <span class="btn-icon">📧</span>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-icon">
+                    <div class="rocket">🚀</div>
+                </div>
+                <p class="scroll-text">Launch Into Cloud Constellation</p>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">👤 About Me</h2>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-card">
+                        <img src="assets/photo.jpg" alt="Lavanya P">
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h3>Lavanya P</h3>
+                    <p class="subtitle">DevOps & Cloud Engineer (Aspiring)</p>
+
+                    <div class="info-tags">
+                        <span class="tag">📍 Puducherry, India</span>
+                        <span class="tag">🎓 B.Tech CSE - MVIT</span>
+                        <span class="tag">⭐ CGPA 9.02/10.0</span>
+                        <span class="tag">🌔 Born Jan 8, 2006</span>
+                    </div>
+
+                    <p>Proactive and forward-thinking <strong>B.Tech CSE student at MVIT</strong> with hands-on experience in AI and Cloud technologies through an <strong>AICTE Edunet internship</strong>. Proficient in Python, Java, Flask, MySQL, and AWS, with growing expertise in DevOps and automation.</p>
+
+                    <p>A disciplined learner and <strong>national-level badminton player</strong> 🏸 representing Pondicherry University at South Zone Nationals. I bring athletic discipline and competitive spirit to coding challenges—<strong>700+ problems solved</strong> on SkillRack with certifications in HackerRank.</p>
+
+                    <div class="highlight-box">
+                        <h4>🌔 My Birth Moon Story</h4>
+                        <p>Born on <strong>January 8, 2006</strong>, under a <strong>Waxing Gibbous moon</strong> at 68% illumination—representing the final refinement before reaching full potential.</p>
+                        <p><strong>This is my DevOps journey:</strong> 68% complete, still 32% to grow, always learning, always improving!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience-section">
+        <div class="section-container">
+            <h2 class="section-title">💼 Professional Experience</h2>
+
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="exp-icon">🤖</div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3>AI & Cloud Virtual Intern</h3>
+                                <p class="exp-company">AICTE Edunet Foundation (Remote)</p>
+                            </div>
+                            <span class="exp-date">Sep - Oct 2025</span>
+                        </div>
+
+                        <ul class="exp-points">
+                            <li>Designed and deployed an <strong>intelligent health planner</strong> integrating Python, Flask, Streamlit, and OpenAI API</li>
+                            <li>Applied <strong>Generative AI</strong> and cloud concepts to create adaptive, user-specific fitness and diet recommendations</li>
+                            <li>Gained hands-on experience in AI/ML model deployment and cloud infrastructure management</li>
+                        </ul>
+
+                        <div class="exp-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Generative AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <h2 class="section-title">🚀 Featured Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔐</div>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <h3>Phishing Link Detector</h3>
+                    <p class="project-subtitle">Browser Extension • Security</p>
+
+                    <p class="project-desc">Developed a browser extension to detect suspicious links in real-time with manual user verification. Built the interface using HTML, CSS, JavaScript, and implemented backend logic with Python Flask.</p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lava2006" class="project-btn" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <span class="project-status featured">Featured</span>
+                    </div>
+                    <h3>AI Workout & Diet Planner</h3>
+                    <p class="project-subtitle">AI/ML • Health Tech</p>
+
+                    <p class="project-desc">Built an AI-powered fitness and diet planner using Python, Flask, Streamlit, and OpenAI API. Implemented LLM-based personalization to generate adaptive plans based on user goals, culture, and resources.</p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">LLM</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lava2006" class="project-btn" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <h2 class="section-title">💻 Technical Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>☁️ Cloud & DevOps</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>AWS (EC2, S3, IAM)</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Docker</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Jenkins</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Git & GitHub</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>💻 Programming</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Java</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>MySQL</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🎨 Frameworks & Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Flask</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Streamlit</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML & CSS</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>VS Code & PyCharm</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🚀 AI & Emerging Tech</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>OpenAI API</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Generative AI</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Linux & Networking</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Problem Solving</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications-section">
+        <div class="section-container">
+            <h2 class="section-title">🏅 Certifications</h2>
+
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <h3>NPTEL Cloud Computing</h3>
+                    <p class="cert-issuer">IIT Kharagpur</p>
+                    <p class="cert-grade">Elite + Silver Certificate</p>
+                    <p class="cert-date">October 2024</p>
+                    <a href="https://www.credly.com/users/lavanya08/" class="cert-link" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🌐</div>
+                    <h3>CCNA: Introduction to Networks</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-grade">Certified</p>
+                    <p class="cert-date">February 2025</p>
+                    <a href="https://www.credly.com/users/lavanya08/" class="cert-link" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🐍</div>
+                    <h3>Python Programming</h3>
+                    <p class="cert-issuer">Spoken Tutorial Project, IIT Bombay</p>
+                    <p class="cert-grade">Certified</p>
+                    <p class="cert-date">November 2024</p>
+                    <a href="https://www.credly.com/users/lavanya08/" class="cert-link" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">☁️</div>
+                    <h3>Oracle Cloud Infrastructure AI Foundation</h3>
+                    <p class="cert-issuer">Oracle Corporation</p>
+                    <p class="cert-grade">Certified</p>
+                    <p class="cert-date">November 2025</p>
+                    <a href="https://www.credly.com/users/lavanya08/" class="cert-link" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🌍</div>
+                    <h3>International Conclave on Sustainnovation ICS 1.0</h3>
+                    <p class="cert-issuer">MVIT</p>
+                    <p class="cert-grade">Participant</p>
+                    <p class="cert-date">November 2024</p>
+                    <a href="https://www.credly.com/users/lavanya08/" class="cert-link" target="_blank">View Certificate →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements" class="achievements-section">
+        <div class="section-container">
+            <h2 class="section-title">🏆 Achievements & Activities</h2>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🔥</div>
+                    <h3>700+ Coding Problems Solved</h3>
+                    <p>Solved 700+ coding problems on SkillRack and earned certifications in HackerRank</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏅</div>
+                    <h3>NPTEL Elite + Silver Certification</h3>
+                    <p>Achieved NPTEL Elite + Silver certification for academic excellence in Cloud Computing</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">📄</div>
+                    <h3>Research Paper Presentation</h3>
+                    <p>Presented a research paper at HITS Chennai, enhancing technical and communication skills</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">💡</div>
+                    <h3>Smart India Hackathon</h3>
+                    <p>Participated in Smart India Hackathon 2023 & 2024, demonstrating innovation and collaboration</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🤝</div>
+                    <h3>NSS Leadership</h3>
+                    <p>Led an NSS awareness program, showing leadership and social responsibility</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏸</div>
+                    <h3>National-Level Badminton Player</h3>
+                    <p>Represented Pondicherry University in national-level badminton tournaments at South Zone Nationals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section">
+        <div class="section-container">
+            <h2 class="section-title">🎓 Education</h2>
+
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="edu-card">
+                        <div class="edu-icon">🎓</div>
+                        <h3>Bachelor of Technology</h3>
+                        <p class="edu-major">Computer Science and Engineering</p>
+                        <p class="edu-institution">Manakula Vinayagar Institute of Technology (MVIT), Puducherry</p>
+                        <p class="edu-duration">2023 - 2027</p>
+                        <div class="edu-grade">CGPA: 9.02/10.0</div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-card">
+                        <div class="edu-icon">📚</div>
+                        <h3>12th Standard (HSC)</h3>
+                        <p class="edu-institution">Kendriya Vidyalaya No.1, JIPMER Campus, Puducherry</p>
+                        <p class="edu-duration">2022 - 2023</p>
+                        <div class="edu-grade">Percentage: 84.5%</div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-card">
+                        <div class="edu-icon">📖</div>
+                        <h3>10th Standard (SSLC)</h3>
+                        <p class="edu-institution">Kendriya Vidyalaya No.1, JIPMER Campus, Puducherry</p>
+                        <p class="edu-duration">2020 - 2021</p>
+                        <div class="edu-grade">Percentage: 85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">📧 Let's Connect</h2>
+
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <h3>Contact Information</h3>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <strong>Email</strong>
+                                <a href="mailto:lavanyaragavan08@gmail.com">lavanyaragavan08@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <strong>Phone</strong>
+                                <a href="tel:+919384328914">+91 9384328914</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <strong>Location</strong>
+                                <p>Puducherry, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="social-title">Find Me Online</h3>
+                    <div class="social-links-grid">
+                        <a href="https://www.linkedin.com/in/lavanya-ragavan/" target="_blank" class="social-link linkedin">
+                            <span>💼</span> LinkedIn
+                        </a>
+                        <a href="https://github.com/lava2006" target="_blank" class="social-link github">
+                            <span>🐙</span> GitHub
+                        </a>
+                        <a href="https://www.credly.com/users/lavanya08/" target="_blank" class="social-link credly">
+                            <span>🏅</span> Credly
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Lavanya" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="lavanya@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="DevOps Opportunity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>🚀</span> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>🌙 LAVANYA P</h3>
+                <p>Cloud & DevOps Engineer</p>
+                <p class="footer-tagline">Building the future, one deployment at a time</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://github.com/lava2006" target="_blank">🐙</a>
+                <a href="https://www.linkedin.com/in/lavanya-ragavan/" target="_blank">💼</a>
+                <a href="mailto:lavanyaragavan08@gmail.com">📧</a>
+                <a href="https://www.credly.com/users/lavanya08/" target="_blank">🏅</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Lavanya P | Born Under the Waxing Gibbous Moon 🌔 | January 8, 2006</p>
+            <p>Built with 💙 using HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+    <!-- ════════════════════════════════════════════════════════════
+     CHATBOT SECTION - Add this BEFORE the closing </body> tag
+     ════════════════════════════════════════════════════════════ -->
+
+    <!-- FLOATING CHATBOT BUTTON -->
+    <div class="chatbot-toggle" id="chatbotToggle">
+        <span class="chatbot-icon">💬</span>
+        <span class="chatbot-notification" id="chatbotNotification">1</span>
+    </div>
+
+    <!-- CHATBOT CONTAINER -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div class="chatbot-details">
+                    <h3>Lavanya's AI Assistant</h3>
+                    <p class="chatbot-status">
+                        <span class="status-dot"></span> Online
+                    </p>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">✕</button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages">
+            <!-- Welcome Message -->
+            <div class="chat-message bot-message">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <p>Hi! 👋 I'm Lavanya's AI Assistant!</p>
+                    <p>Ask me anything about:</p>
+                    <div class="quick-chips">
+                        <button class="chip" data-message="Tell me about Lavanya's experience">💼 Experience</button>
+                        <button class="chip" data-message="What are Lavanya's skills?">🛠️ Skills</button>
+                        <button class="chip" data-message="Show me projects">🚀 Projects</button>
+                        <button class="chip" data-message="How to contact Lavanya?">📧 Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <div class="chatbot-toggle" id="chatbotToggle">
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                class="chatbot-input" 
+                id="chatbotInput" 
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+            <button class="chatbot-send" id="chatbotSend">
+                <span>🚀</span>
+            </button>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+        </div>
+    </div>
+</div>
+<!-- ════════════════════════════════════════════════════════════
+     VOICE-ENABLED CHATBOT - UPDATED HTML
+     Add/Replace the chatbot input section with this
+     ════════════════════════════════════════════════════════════ -->
+
+        <div class="chatbot-input-container">
+            <button class="voice-toggle" id="voiceToggle" title="Toggle Voice">
+                <span id="voiceIcon">🔊</span>
+            </button>
+            <input 
+                type="text" 
+                class="chatbot-input" 
+                id="chatbotInput" 
+                placeholder="Type your message or click mic to speak..."
+                autocomplete="off"
+            >
+            <button class="voice-input-btn" id="voiceInputBtn" title="Voice Input">
+                <span id="micIcon">🎤</span>
+            </button>
+            <button class="chatbot-send" id="chatbotSend">
+                <span>🚀</span>
+            </button>
+        </div>
+
+        <!-- Voice Status Indicator -->
+        <div class="voice-status" id="voiceStatus">
+            <span class="voice-status-text">🎙️ Listening...</span>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
