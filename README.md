@@ -1,2 +1,0 @@
-# Portfolio-Lavanya
-Personal portfolio 
